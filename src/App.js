@@ -19,6 +19,7 @@ const App = () => {
         `https://skyline.shuhaib.host/temp/api/check-status?Location=${data.Location}&Customer=${data.Customer}&Order=${data["Order#"]}`
       )
       .then((res) => {
+        console.log(res)
         setFetchedData(res.data.data);
       })
       .catch((err) => {
